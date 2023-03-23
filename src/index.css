@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: #01051a;
+  background-color: #050C31;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@font-face {
+  font-family: "Paladin";
+  src: url("./assets/paladins/paladins.ttf");
+}
+
+@font-face {
+  font-family: "Rugen";
+  src: url("./assets/rugen-exp-font/RugenExpanded-DOKGE.otf");
+}
+
+@font-face {
+  font-family: "W95FA";
+  src: url("./assets/W95FA/W95FA/w95fa.woff");
+}
+
+.font-paladin {
+  font-family: "Paladin";
+}
+.font-rugen {
+  font-family: "Rugen";
+}
+.font-w95fa {
+  font-family: "W95FA";
+}
+
+.stroke-text {
+    color: transparent;
+    -moz-text-stroke: 1px #ffff;
+    -webkit-text-stroke: 1px #ffff;
+}
+
+.clip-path-triangle {
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+.clip-path-trap {
+  clip-path: polygon(22% 64%, 100% 63%, 100% 100%, 0% 100%);
+}
