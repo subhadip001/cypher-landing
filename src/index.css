@@ -36,22 +36,26 @@
 .font-paladin {
   font-family: "Paladin";
 }
+
 .font-rugen {
   font-family: "Rugen";
 }
+
 .font-w95fa {
   font-family: "W95FA";
 }
 
 .stroke-text {
-    color: transparent;
-    -moz-text-stroke: 1px #ffff;
-    -webkit-text-stroke: 1px #ffff;
+  color: transparent;
+  -moz-text-stroke: 1px #ffff;
+  -webkit-text-stroke: 1px #ffff;
 }
 
 .clip-path-triangle {
   clip-path: polygon(0 0, 0 100%, 100% 100%);
 }
+
 .clip-path-trap {
-  clip-path: polygon(22% 64%, 100% 63%, 100% 100%, 0% 100%);
+  clip-path: polygon(18% 3%, 100% 2%, 100% 100%, 0% 100%);
+
 }

@@ -5,13 +5,21 @@ import { ImMusic } from "react-icons/im";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  const [bgColor, setBgColor] = useState("bg-transparent");
+  const [bgColor1, setBgColor1] = useState("bg-transparent");
+  const [bgColor2, setBgColor2] = useState("bg-transparent");
 
-  function handleClick() {
-    setBgColor("bg-[#01051a]");
+  function handleClick(n) {
+    if (n===1){
+      setBgColor1("bg-[#01051a]");
+    }
+    else{
+      setBgColor2("bg-[#01051a]")
+    }
+    
   }
   function handleUp() {
-    setBgColor("bg-tarnsparent");
+    setBgColor1("bg-tarnsparent");
+    setBgColor2("bg-tarnsparent");
   }
 
   return (
@@ -23,23 +31,28 @@ const Home = () => {
             target="_blank"
           >
             <div
-              onMouseDown={handleClick}
+              onMouseDown={()=>{handleClick(1)}}
               onMouseUp={handleUp}
-              className={`flex cursor-pointer clip-path-triangle z-30 ${bgColor} h-[125px] w-[145px] p-5 items-end text-4xl absolute border-2 border-white rounded-lg top-[23.9rem] left-6`}
+              className={`flex cursor-pointer clip-path-triangle z-30 ${bgColor1} h-[125px] w-[145px] p-5 items-end text-4xl absolute border-2 border-white rounded-lg top-[23.9rem] left-6`}
             >
               {" "}
               <ImMusic className="bg-transparent" />
             </div>
           </a>
           <Link to="/notify">
-            <div className="flex cursor-pointer z-30 bg-transparent justify-center item-center h-[70px] w-[276px] p-5 items-end text-4xl absolute border-b-2 border-r-2 border-white rounded-lg top-[27rem] right-6">
-              <span className="font-semibold text-2xl">Notify Me</span>
+            <div
+              onMouseDown={()=>{handleClick(2)}}
+              onMouseUp={handleUp}
+              className={`flex cursor-pointer z-30 ${bgColor2} clip-path-trap justify-center item-center h-[70px] w-[276px] p-5 items-end text-4xl absolute border-2 border-white rounded-lg top-[27rem] right-6`}
+            >
+              <span className="font-semibold text-2xl bg-transparent">Notify Me</span>
             </div>
           </Link>
           <img
-            className="absolute z-20 bg-transparent"
+            className="absolute z-20 bg-transparent w-full"
             src={backgroundImage}
             alt=""
+            loading="lazy"
           />
           <img
             className="absolute right-[12.5rem] top-5 z-10"
