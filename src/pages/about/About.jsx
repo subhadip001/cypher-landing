@@ -5,7 +5,7 @@ const About = () => {
   return (
     <main className="h-[90vh] w-[80%] mx-auto">
       <section className="top flex justify-between items-center">
-        <div className="left w-[532px] h-[246px] relative">
+        <div className="left w-[532px] h-[246px] relative fadeIn">
           <img src={backMiniImage} alt="" />
           <span className="absolute font-rugen stroke-text text-5xl top-[3.75rem] bg-transparent left-[11.43rem]">
             WE ARE
