@@ -43,7 +43,7 @@ const Home = () => {
     <>
       <section className="h-[90vh] w-[80%] mx-auto -z-10">
         <div
-          className="mt-[7rem] relative container"
+          className="mt-[7rem] relative container fadeIn"
           style={{
             transform: `perspective(5000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
             transition: "transform 0.6s ease-out",
@@ -78,7 +78,7 @@ const Home = () => {
               </span>
             </div>
           </Link>
-          <div className="relative">
+          <div className="relative ">
             <img
               className="absolute z-20 bg-transparent w-full"
               src={backgroundImage}
@@ -112,7 +112,7 @@ const Home = () => {
             </span>
           </div>
           <img
-            className="absolute right-[12.5rem] top-5 moveUp z-10"
+            className="absolute right-[12.5rem] top-5 moveUp z-10 bg-transparent"
             src={arrowImage}
             alt=""
           />

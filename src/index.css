@@ -64,6 +64,10 @@
   animation: moveUp 1s;
 }
 
+.fadeIn {
+  animation: fadeIn 1s;
+}
+
 @keyframes moveUp {
   from {
     transform: translate(-50%, 50%);
@@ -71,5 +75,15 @@
 
   to {
     transform: translate(0%, 0%);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
   }
 }
