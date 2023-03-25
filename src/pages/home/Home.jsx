@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import backgroundImage from "../../assets/background.png";
+import backgroundImage from "../../assets/background.webp";
 import arrowImage from "../../assets/arrow.png";
 import { ImMusic } from "react-icons/im";
 import { Link } from "react-router-dom";
