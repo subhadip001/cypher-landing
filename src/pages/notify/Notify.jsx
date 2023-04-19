@@ -6,7 +6,7 @@ const Notify = () => {
   return (
     <div className="h-[90vh] w-[80%] mx-auto">
       <div className="left w-[532px] h-[246px] fadeIn relative mx-auto top-12 z-10">
-        <img src={backMiniImage} className="bg-transparent" alt="" />
+        <img src={backMiniImage} loading="lazy" className="bg-transparent" alt="" />
         <span className="absolute font-rugen stroke-text text-5xl top-[3.75rem] bg-transparent left-[11.43rem]">
           WE ARE
         </span>
@@ -18,6 +18,7 @@ const Notify = () => {
         <img
           src={backNotifyImage}
           alt=""
+          loading="lazy"
           className="w-full h-[300px] bg-transparent"
         />
         <div className="w-[80%] h-[64px] flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] rounded-2xl border border-white">

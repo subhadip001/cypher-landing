@@ -45,8 +45,8 @@ const Home = () => {
         <div
           className="mt-[7rem] relative container fadeIn"
           style={{
-            transform: `perspective(5000px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
-            transition: "transform 0.6s ease-out",
+            transform: `perspective(2500px) rotateX(${tilt.x}deg) rotateY(${tilt.y}deg)`,
+            transition: "transform 0.5s ease-out",
             willChange: "transform",
           }}
         >
