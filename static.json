@@ -1,7 +1,8 @@
 {
-    "clean_urls": false,
-    "routes": [
-      { "src": "/.*", "dest": "/index.html" }
-    ]
+    "cleanUrls": true,
+    "staticPaths": {
+      "/": "build/index.html",
+      "/assets": "build/assets"
+    }
   }
   
