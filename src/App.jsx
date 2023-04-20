@@ -6,6 +6,7 @@ import About from "./pages/about/About";
 import Home from "./pages/home/Home";
 import Notify from "./pages/notify/Notify";
 import "./index.css"
+import NotFound from "./pages/notfound/NotFound";
 
 function App() {
   const Layout = () => {
@@ -34,6 +35,10 @@ function App() {
         {
           path: "/notify",
           element: <Notify />,
+        },
+        {
+          path: "*",
+          element: <NotFound />,
         },
       ],
     },
